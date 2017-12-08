@@ -3,7 +3,7 @@
 - Add following entries in application.properties
 ```      
         server.port=8080
-        server.contextPath=/myApp*
+        server.contextPath=/myApp
 ```
 - Update pom.xml with finalName
 ```      
@@ -33,11 +33,12 @@
 - Move the application code in ec2 instane
 - Build docker image
   - In application folder:
-        *docker build -f Dockerfile -t docker-boot-demo .*
+    - *docker build -f Dockerfile -t docker-boot-demo .*   
   - Check if image is created:
-        *docker images*
+    - *docker images*
 - Run a container with the image:
-	*sudo docker run -p 9000:8080 springboot-docker-demo*
+  - *sudo docker run -p 9000:8080 springboot-docker-demo* OR
+  - *sudo docker run -d -p 9000:8080 springboot-docker-demo* [run in detach mode]
 - Access the application running on container: 
 	*[DNS name of ec2 instance]:9000/myApp/process*
   - Security group for EC2 instance should have "Custom TCP Rule" with protocol= TCP, port range=9000 and source=anywhere 
