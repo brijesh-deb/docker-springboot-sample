@@ -38,8 +38,10 @@
         *docker images*
 - Run a container with the image:
 	*sudo docker run -p 9000:8080 springboot-docker-demo*
-- Access the application running on container:
-	*[DNS name of ec2 instance]:9000/myApp/process
+- Access the application running on container: 
+	*[DNS name of ec2 instance]:9000/myApp/process*
+  - Security group for EC2 instance should have "Custom TCP Rule" with protocol= TCP, port range=9000 and source=anywhere 
+
 
 	
 
