@@ -32,8 +32,12 @@
 - Install docker in that instance
 - Move the application code in ec2 instane
 - Build docker image
-  - In application folder
+  - In application folder:
         *docker build -f Dockerfile -t docker-boot-demo .*
-  - Check if image is created
+  - Check if image is created:
         *docker images*
+- Run a container with the image:
+	*sudo docker run -p 9000:8080 springboot-docker-demo*
+
+
 
