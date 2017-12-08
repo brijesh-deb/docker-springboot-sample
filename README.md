@@ -1,8 +1,9 @@
 ## Deploying a SpringBoot service in Docker container
 - Implement a sample SpringBoot application
 - Add following entries in application.properties
-```server.port=8080
-   server.contextPath=/myApp*
+```
+      server.port=8080
+      server.contextPath=/myApp*
 ```
 - Add Dockerfile at the root of the project with following entries
   - EXPOSE denotes the port at which container will lisent to for connections. Same as server.port in last step
