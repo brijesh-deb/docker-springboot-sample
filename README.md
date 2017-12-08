@@ -38,6 +38,10 @@
         *docker images*
 - Run a container with the image:
 	*sudo docker run -p 9000:8080 springboot-docker-demo*
+- Access the application running on container:
+	*[DNS name of ec2 instance]:9000/myApp/process
+
+	
 
 
 
