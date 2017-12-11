@@ -30,6 +30,7 @@
 - Run the application locally and test [localhost:8080/myApp/process]
 - Create an ec2 instance with linux AMI
 - Install docker in that instance 
+  - Security group for EC2 instance should have "Custom TCP Rule" with protocol= TCP, port range=9000 and source=anywhere 
 - Move the application code to ec2 instance (use WinSCP)
 - Build docker image
   - In application folder:
@@ -39,10 +40,10 @@
 - Run a container with the image:
   - *sudo docker run -p 9000:8080 springboot-docker-demo* OR
   - *sudo docker run -d -p 9000:8080 springboot-docker-demo* [run in detach mode]
+  Here 9000 is host port and 8080 is container port
 - Access the application running on container: 
 	*[DNS name of ec2 instance]:9000/myApp/process*
-  - Security group for EC2 instance should have "Custom TCP Rule" with protocol= TCP, port range=9000 and source=anywhere 
-
+  
 
 	
 
