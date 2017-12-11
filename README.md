@@ -1,5 +1,5 @@
 ## Deploying a SpringBoot service in Docker container
-- Implement a sample SpringBoot application
+- Download this sample SpringBoot application
 - Add following entries in application.properties
 ```      
         server.port=8080
@@ -29,8 +29,8 @@
 ```
 - Run the application locally and test [localhost:8080/myApp/process]
 - Create an ec2 instance with linux AMI
-- Install docker in that instance
-- Move the application code in ec2 instane
+- Install docker in that instance 
+- Move the application code to ec2 instance (use WinSCP)
 - Build docker image
   - In application folder:
     - *docker build -f Dockerfile -t docker-boot-demo .*   
