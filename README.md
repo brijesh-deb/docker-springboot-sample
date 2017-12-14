@@ -34,7 +34,7 @@
 - Move the application code to ec2 instance (use WinSCP)
 - Build docker image
   - In application folder:
-    - *docker build -f Dockerfile -t docker-boot-demo .*   
+    - *docker build -f Dockerfile -t springboot-docker-demo .*   
   - Check if image is created:
     - *docker images*
 - Run a container with the image:
