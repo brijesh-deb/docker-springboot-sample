@@ -1,4 +1,4 @@
-## Deploying a SpringBoot service in Docker container
+## SpringBoot service in Docker container - Sample
 - Download this sample SpringBoot application
 - Add following entries in application.properties
 ```      
