@@ -18,7 +18,7 @@
 	</build>
 ```      
 - Add Dockerfile at the root of the project with following entries
-  - EXPOSE denotes the port at which container will lisent to for connections. Same as server.port above
+  - EXPOSE denotes the port at which container will lisen to for connections. Same as server.port above
   - Jar name mentioned in ADD should be same as finalName in pom.xml
 ```      
         *#Enter all the required tools like java, mysql, redis etc inside Dockerfile
