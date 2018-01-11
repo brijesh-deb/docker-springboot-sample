@@ -27,11 +27,12 @@
         EXPOSE 8080
         ENTRYPOINT ["java", "-jar", "springboot-docker-demo.jar"]*
 ```
+- Create the jar file: *mvn package*
 - Run the application locally and test [localhost:8080/myApp/process]
 - Create an ec2 instance with linux AMI
 - Install docker in that instance 
   - Security group for EC2 instance should have "Custom TCP Rule" with protocol= TCP, port range=9000 and source=anywhere 
-- Move the application code to ec2 instance (use WinSCP)
+- Move the application code(along with target folder) to ec2 instance (use WinSCP)
 - Build docker image
   - In application folder:
     - *docker build -f Dockerfile -t springboot-docker-demo .*   
